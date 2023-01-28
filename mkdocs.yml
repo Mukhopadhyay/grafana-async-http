@@ -2,6 +2,9 @@ site_name: Grafana Async HTTP
 site_author: Pranesh Mukhopadhyay
 site_description: Async Grafana HTTP API wrapper
 
+nav:
+  - Home: index.md
+  - APIs: apis.md
 
 theme:
   name: material
@@ -13,7 +16,6 @@ theme:
       primary: orange
       accent: deep orange
       toggle:
-        # icon: material/lightbulb
         icon: material/brightness-4
         name: Switch to dark mode
 
@@ -23,6 +25,31 @@ theme:
       primary: orange
       accent: deep orange
       toggle:
-        # icon: material/lightbulb-outline
         icon: material/brightness-7
         name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: false
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+repo_url: https://github.com/Mukhopadhyay/grafana-async-http
+repo_name: Mukhopadhyay/grafana-async-http
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/allthingstensor
+      name: Mukhopadhyay on Twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/Mukhopadhyay/grafana-async-http
+      name: grafana-async-http
